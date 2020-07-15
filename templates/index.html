@@ -1,0 +1,40 @@
+{% extends 'base/base.html' %}
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+	{% from "_macro.html" import render_field %}
+	 <div class="container h-100">
+        <div class="row align-items-center h-100">
+            <div class="col-md-8 col-sm-12 mx-auto">
+                <div class="h-100 justify-content-center">
+                    <div class="chat-container" style="overflow: auto; max-height: 80vh">
+                        <div class="chat-message col-md-5 offset-md-7 bot-message">
+                           Bienvenido a Tecnologic Store UPS! 
+                        </div>
+                        <div class="chat-message col-md-5 offset-md-7 bot-message">
+                          
+                          Mi nombre es Skynet sere tu asistente de informacion 
+                          <P>En que te puedo ayudar?</P>
+                          <p>Por el momento nuestros productos son:</p>
+                          <ul>
+                            <li type="circle">Laptops</li>
+
+                            <li type="circle">Celulares</li>
+
+                            <li type="circle">Productos Novedosos.</li>
+
+                            </ul>
+                        </div>
+                        
+                    </div>
+					<form id="target" action="#">
+				        {{ render_field(form.input_message, class="input" ) }}
+				        {{ form.honeypot }}
+				        <input type="submit" hidden>
+				    </form>
+				    </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

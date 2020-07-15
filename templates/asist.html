@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Aqui va el contenido">
+  <meta name="keywords" content="Aqui va palabras claves">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='st.css') }}">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styl.css') }}">
+
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='flaticon.css') }}">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+
+  <title>Pruebas</title>
+</head>
+<body>
+  <div class="respo">
+   
+    <section id="wrap1">
+        
+        <section id="bienvenidos1">
+            <article>
+                <hgroup><h3><a id="neo1" href="{{ url_for('main') }}">Inicio</a>|<a id="neo1" href="{{ url_for('lap') }}" id="neo1">Laptops</a>|<a id="neo1" href="{{ url_for('cell') }}" id="neo1">Celulares</a>|<a id="neo1" href="{{ url_for('nov') }}" id="neo1">Productos Novedosos</a></h3></hgroup>
+            </article>
+        </section>
+    </section>
+    <section id="wrap">
+      
+      <section id="main">
+            <section id="contenido1" class="blogs-posts-container">
+                <div class="grid-container">
+    
+                    <h3>Asistente disponibles</h3>
+                    <article class="post-container-chat">
+                        <div class="container h-100" >
+                            <div class="row align-items-center h-100">
+                                <div class="col-md-8 col-sm-12 mx-auto">
+                                    <div class="h-100 justify-content-end">
+                                        <div class="chat-container" style="overflow: auto; max-height: 80vh">
+                                            <!-- chat messages -->
+                                            <div class="chat-message col-md-5 offset-md-7 bot-message">
+                                               Bienvenido a Tecnologic Store UPS! 
+                                            </div>
+                                            <div class="chat-message col-md-5 offset-md-7 bot-message">
+                                              
+                                              Mi nombre es Skynet sere tu asistente de  informacion 
+                                              <P>En que te puedo ayudar?</P>
+                                              <p>Por el momento nuestros productos son:</p>
+                                              <ul>
+                                                <li type="circle">Laptops</li>
+                    
+                                                <li type="circle">Celulares</li>
+                    
+                                                <li type="circle">Productos Novedosos.</li>
+                    
+                                                </ul>
+                                            </div>
+                                            
+                    
+                                        </div>
+                                        <form id="target">
+                                            {% from "_macro.html" import render_field %}
+                                                {{ render_field(form.input_message, class="input" ) }}
+                                                {{ form.honeypot }}
+                                            <input type="submit" hidden>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+                        <script type="text/javascript" src="{{ url_for('static', filename='custom.js') }}"></script>
+    
+                    </article>
+                    
+                    
+                </div>
+                
+    
+            </section>
+          
+        <div id="copyright">
+            <p>Copyright © 2020 Tecnologic Store Ups P.W All rights reserved. Politica de privacidad | </p></div>
+        </section>
+    </section>
+   
+  </div>
+
+</body>
+</html>
+

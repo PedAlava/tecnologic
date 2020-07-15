@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Aqui va el contenido">
+  <meta name="keywords" content="Aqui va palabras claves">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='estilos.css') }}">
+
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='st.css') }}">
+  
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
+    <script src="{{ url_for('static', filename='jquery.slides.min.js') }}" type="text/javascript"></script>
+    <script type="text/javascript">
+      $(function(){
+         $('#slides').slidesjs({
+        width: 1000,
+        height: 200,
+        play: {
+          active: true,
+          auto: true,
+          interval: 1100,
+          swap: true
+        }
+      });
+      });
+    </script>
+
+  <title>Pruebas</title>
+</head>
+<body>
+  <div class="respo">
+    <!--<header>
+      <div id="subheader">
+        <div id="logotipo">
+          <p><a href="#">Plataformas</a></p>
+          
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>  
+    </header>-->
+    <section id="wrap1">
+        <div class="container">
+            <div id="slides">
+                <img src="{{ url_for('static', filename='images/salesiana.png') }}" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+                <img src="{{ url_for('static', filename='images/celus.jpg') }}" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+                <img src="{{ url_for('static', filename='images/cel.jpg') }}" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+                <img src="{{ url_for('static', filename='images/laptops.jpg') }}" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+                <img src="{{ url_for('static', filename='images/lap.jpg') }}" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+                <img src="{{ url_for('static', filename='images/lapt.jpg') }}" alt="Photo by: Missy S Link: http://www.flickr.com/photos/listenmissy/5087404401/">
+            </div>
+        </div>
+        <section id="bienvenidos1">
+            <article>
+                <hgroup><h3><a id="neo1" href="{{ url_for('main') }}">Inicio</a>|<a id="neo1" href="{{ url_for('lap') }}" id="neo1">Laptops</a>|<a id="neo1" href="{{ url_for('cell') }}" id="neo1">Celulares</a>|<a href="{{ url_for('asistence') }}" id="neo">Asistencia</a></h3></hgroup>
+            </article>
+        </section>
+    </section>
+    <section id="wrap">
+      
+      <section id="main">
+            
+            <section id="contenido1" class="blogs-posts-container">
+                <div class="grid-container">
+    
+                    <a href="celulares.html"><h3>Productos a la venta</h3></a>
+                    <article class="post-container">
+    
+                        <img src="{{ url_for('static', filename='images/asus.jpg') }}" alt="">
+    
+                        <h4>Life Clock - Un Reloj con Kit de Supervivencia en su Interior</h4>
+    
+                        <p>Parece un reloj como cualquier otro sin embargo.....</p>
+    
+                        <a href="blog_1.html" class="blogs-button">Leer más</a>
+    
+                    </article>
+                    <article class="post-container">
+    
+                        <img src="{{ url_for('static', filename='images/asus.jpg') }}" alt="">
+                        <h4>Clippad - Control de Juegos para Smartphones</h4>
+                        <p>Tiene la capacidad de conectarse a tu dispositivo móvil vía bluetooth y es compatible.....</p>
+    
+                        <a href="blog_1.html" class="blogs-button">Leer más</a>
+    
+                    </article>
+    
+                    <article class="post-container">
+    
+                        <img src="{{ url_for('static', filename='images/asus.jpg') }}" alt="">
+                        <h4>Chairless Chair - La Silla que Aparece Cuando la Necesitas</h4>
+    
+                        <p>Diseñada para personas que laboran en el sector industrial o manufacturero, Chairless Chair... </p>
+    
+                        <a href="blog_1.html" class="blogs-button">Leer más</a>
+    
+                    </article>
+                    <article class="post-container">
+    
+                        <img src="{{ url_for('static', filename='images/asus.jpg') }}" alt="">
+    
+                        <h4>Life Clock - Un Reloj con Kit de Supervivencia en su Interior</h4>
+    
+                        <p>Parece un reloj como cualquier otro sin embargo.....</p>
+    
+                        <a href="blog_1.html" class="blogs-button">Leer más</a>
+    
+                    </article>
+                    <article class="post-container">
+    
+                        <img src="{{ url_for('static', filename='images/asus.jpg') }}" alt="">
+                        <h4>Clippad - Control de Juegos para Smartphones</h4>
+                        <p>Tiene la capacidad de conectarse a tu dispositivo móvil vía bluetooth y es compatible.....</p>
+    
+                        <a href="blog_1.html" class="blogs-button">Leer más</a>
+    
+                    </article>
+    
+                    <article class="post-container">
+    
+                        <img src="{{ url_for('static', filename='images/asus.jpg') }}" alt="">
+                        <h4>Chairless Chair - La Silla que Aparece Cuando la Necesitas</h4>
+    
+                        <p>Diseñada para personas que laboran en el sector industrial o manufacturero, Chairless Chair... </p>
+    
+                        <a href="blog_1.html" class="blogs-button">Leer más</a>
+    
+                    </article>
+                    <article class="post-container">
+    
+                        <img src="{{ url_for('static', filename='images/asus.jpg') }}" alt="">
+    
+                        <h4>Life Clock - Un Reloj con Kit de Supervivencia en su Interior</h4>
+    
+                        <p>Parece un reloj como cualquier otro sin embargo.....</p>
+    
+                        <a href="blog_1.html" class="blogs-button">Leer más</a>
+    
+                    </article>
+                    <article class="post-container">
+    
+                        <img src="{{ url_for('static', filename='images/asus.jpg') }}" alt="">
+                        <h4>Clippad - Control de Juegos para Smartphones</h4>
+                        <p>Tiene la capacidad de conectarse a tu dispositivo móvil vía bluetooth y es compatible.....</p>
+    
+                        <a href="blog_1.html" class="blogs-button">Leer más</a>
+    
+                    </article>
+    
+                    <article class="post-container">
+    
+                        <img src="{{ url_for('static', filename='images/asus.jpg') }}" alt="">
+                        <h4>Chairless Chair - La Silla que Aparece Cuando la Necesitas</h4>
+    
+                        <p>Diseñada para personas que laboran en el sector industrial o manufacturero, Chairless Chair... </p>
+    
+                        <a href="blog_1.html" class="blogs-button">Leer más</a>
+    
+                    </article>
+                </div>
+    
+            </section>
+          
+        <div id="copyright">
+            <p>Copyright © 2020 Tecnologic Store Ups P.W All rights reserved. Politica de privacidad | </p></div>
+        </section>
+    </section>
+   
+  </div>
+
+</body>
+</html>
+

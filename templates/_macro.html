@@ -1,0 +1,12 @@
+{% macro render_field(field) %}
+   
+
+					<dd>{{ field(**kwargs)| safe }}
+                    
+                    <!--<form id="target">
+                       <input class="input" type="text" value="" placeholder="Enter message..." id="input_message"/>
+                       <input type="submit" hidden>
+                    </form>-->
+                
+
+{% endmacro %}

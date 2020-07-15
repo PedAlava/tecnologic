@@ -1,0 +1,7 @@
+(function(){
+    $(function(){
+        $('#ventana').modal();
+    }
+    
+    );
+}());

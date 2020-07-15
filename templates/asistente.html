@@ -1,0 +1,53 @@
+{% extends 'base/bas.html' %}
+{% block title %} {{title}} {% endblock %}
+
+{% block content %}
+<section id="contenido1" class="blogs-posts-container">
+    <div class="grid-container">
+
+        <article class="post-container-chat">
+            <div class="container h-100" >
+                <div class="row align-items-center h-100">
+                    <div class="col-md-12 col-sm-12 mx-auto">
+                        <div class="h-100 justify-content-end">
+                            <div class="chat-container" style="overflow: auto; max-height: 80vh">
+                                <!-- chat messages -->
+                                
+                                <div class="chat-message col-md-14 offset-md-5  bot-message">
+                                    Bienvenido a Tecnologic Store UPS! 
+                                  Mi nombre es Skynet sere tu asistente de  informacion 
+                                  <P>En que te puedo ayudar?</P>
+                                  <p>Por el momento nuestros productos son:</p>
+                                  <ul>
+                                    <li type="circle">Laptops</li>
+        
+                                    <li type="circle">Celulares</li>
+        
+                                    <li type="circle">Productos Novedosos.</li>
+        
+                                    </ul>
+                                </div>
+        
+                            </div>
+                            <form id="target">
+                                {% from "_macro.html" import render_field %}
+                                    {{ render_field(form.input_message, class="input" ) }}
+                                     {{ form.honeypot }}
+                               <input type="submit" hidden>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+              </div>
+             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+             <script type="text/javascript" src="{{ url_for('static', filename='custom.js') }}"></script>
+    
+        </article>
+    </div>
+</section>
+        
+    
+
+
+
+{% endblock %}

@@ -1,0 +1,52 @@
+.blogs-posts-container .post-container-chat{	
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 10px;
+    max-width: 100%;
+    width: 100%;
+	margin-bottom: 50px;
+	background: gray;
+	border-radius: 5px;
+	box-shadow: 0px 3px 3px #000;
+}
+
+.blogs-posts-container h3{
+	border-bottom: 1px solid #cdd2da;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.blogs-posts-container a{
+	text-decoration: none;
+}
+
+
+.blogs-posts-container .post-container{	
+	display: inline-block;
+	padding-top: 10px;
+	padding-left: 10px;
+	max-width: 273px;
+	margin-bottom: 50px;
+	background: rgb(212, 139, 44);
+	border-radius: 5px;
+	box-shadow: 0px 3px 3px #000;
+}
+
+.blogs-posts-container .post-container h4 {
+	text-align: center;
+}
+.blogs-posts-container .post-container p {
+	padding: 5px;
+	margin-bottom: 35px;
+}
+.blogs-posts-container .post-container img {
+	width: 98%;
+	border-radius: 5px;
+	box-shadow: 0px 3px 3px #000;
+	-moz-box-shadow: 0px 3px 3px #000;
+	-webkit-box-shadow: 0px 3px 3px #000;
+	opacity: 0.7;
+	border: 1px solid #000;
+}
+.blogs-posts-container .post-container img:hover{
+	opacity: 1;
+}
